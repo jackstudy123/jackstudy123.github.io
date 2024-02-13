@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <script src="feedback.js"></script>
+    <div class="container">
+        <div class="menu">
+          
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popularD.html">Popular Destination</a></li>
+            <li><a href="unpopularD.html">Unpopular Attractions</a></li>
+            <li><a href="Vehicle.html">Vehicle</a></li>
+            <li><a href="share.html">Share Your Experience</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+
+        <!--this is the menu of our website, whatever user in which page, he can click
+        the menu on the left to move to other page, it is very convinient-->
+
+
+        <div class="content">
+
+            <div class="size">Contact Us</div>
+    <form action="submit-form.php" method="post" enctype="multipart/form-data">
+      <p></p>
+      <p>If you have any question, please feel free to contact us !</p>
+        <label for="name">Name:</label>
+        
+      <input type="text" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea name="message" rows="8" cols="50" required></textarea><br><br>
+      
+      <label for="file">Upload Picture:</label>
+      <input type="file" id="file" name="file"><br><br>
+      
+      <input type="submit" value="Send">
+
+      <!--user can leave their information, message and picture, then we can
+      contact them -->
+
+    </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Share Your Travel Experience</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <script src="feedback.js"></script>
+    <div class="container">
+        <div class="menu">
+          
+            <li><a href="index.html">Home</a></li>
+          <li><a href="popularD.html">Popular Destination</a></li>
+          <li><a href="unpopularD.html">Unpopular Attractions</a></li>
+          <li><a href="Vehicle.html">Vehicle</a></li>
+          <li><a href="share.html">Share Your Experience</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+          
+        </div>
+
+         <!--this is the menu of our website, whatever user in which page, he can click
+        the menu on the left to move to other page, it is very convinient-->
+
+        <div class="content">
+            <div class="size"><text>Share Your Travel Experience</text></div>
+    <form>
+      <label for="experience">Write about your travel experience:</label><br>
+      <textarea id="experience" name="experience" rows="5" cols="50"></textarea><br><br>
+      <label for="level">Select the rating of your travel experience:</label><br>
+      <input type="radio" id="level1" name="level" value="1">
+      <label for="level1">1 - Very Bad</label><br>
+      <input type="radio" id="level2" name="level" value="2">
+      <label for="level2">2 - Bad</label><br>
+      <input type="radio" id="level3" name="level" value="3">
+      <label for="level3">3 - Fair</label><br>
+      <input type="radio" id="level4" name="level" value="4">
+      <label for="level4">4 - Good</label><br>
+      <input type="radio" id="level5" name="level" value="5">
+      <label for="level5">5 - Very Good</label><br><br>
+      <input type="submit" value="Send">
+      
+      <!--user can input the text about travel experience and there are five choices
+      to let user select the rating of their travel experience-->
+    </form>
+    <p><h2>Thank you for your sharing !</h2></p>
+        </div>
+  </body>
+</html>

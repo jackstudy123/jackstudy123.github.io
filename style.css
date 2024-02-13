@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  .menu {
+    width: 15%;
+    background-color: hsl(193, 28%, 35%);
+    height: 100%;
+    padding: 20px 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+  }
+
+  /*this is menu in the left side, it is fixed, so if user scroll the right part
+  of the website, the menu will still here so the user can be easy to use the menu */
+  
+
+  
+  .menu li {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 20px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+
+  
+  .menu li a:hover {
+    background-color: #555;
+    color: #ffffff;
+  }
+/* if user put the mouse on the menu, the background color will change so the user
+will know he can click the item of menu */
+  
+
+  .content {
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 85%;
+    color: rgb(255, 255, 255);
+    background-image: url("picture/c.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 15%; 
+  }
+
+  /* there is a background picture, so the site will look much more interesting */
+
+  .content text {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-weight: bold;
+  }
+  .size{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+
+  .D{
+    height: 100%;
+    padding: 20px;
+    width: 85%;
+    color: rgb(255, 255, 255);
+    background-image: url("picture/a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15%; 
+  }
+
+/* there is a different background picture for other page */
+
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  
+    .menu {
+      position: static;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+  
+    .content,
+    .D {
+      position: static;
+      width: 100%;
+      margin-left: 0;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+  }
+
+/*if the webpage size is too small then the menu will show on the bottom of the
+webste, by doing so, it is more userfriendly and beautiful*/
+
